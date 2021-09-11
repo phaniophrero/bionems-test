@@ -1,0 +1,184 @@
+.product--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .product--wrapper {
+    display: flex;
+
+    .product--image__wrapper {
+      width: 40rem;
+      margin-right: 20rem;
+
+      img {
+        width: 100%;
+      }
+    }
+    .product--details {
+      .product--title {
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 6rem;
+        color: #168c34;
+      }
+      .product--title2 {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: #ffa5c1;
+      }
+
+      .product--ingredient__list {
+        list-style: none;
+        .product--ingredient__item {
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.7rem;
+          color: #539564;
+        }
+      }
+    }
+  }
+
+  .product--info {
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+
+    .product--ratings {
+      width: 41rem;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20rem;
+    }
+
+    .description {
+      width: 76.6rem;
+      display: flex;
+      flex-direction: column;
+
+      .description--title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 3.8rem;
+        color: #a2c3aa;
+        position: relative;
+        padding-bottom: 1.4rem;
+        &::after {
+          content: "";
+          width: 5rem;
+          height: 0.2rem;
+          background-color: #457e54;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+      .description--text {
+        width: 53.1rem;
+        display: flex;
+        justify-self: flex-end;
+        justify-content: flex-end;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.7rem;
+        color: #ffa5c1;
+        margin-top: 2rem;
+      }
+    }
+    .product--ratings {
+      .product--ratings__stars {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        .product--ratings__star {
+          width: 1.5rem;
+          margin-right: 0.5rem;
+          &:last-of-type {
+            margin-right: 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        svg {
+          color: #ffcb1d;
+        }
+        .product--ratings__icon {
+          width: 1.2rem;
+          border: none;
+          background: transparent;
+          margin-left: 1.5rem;
+          img {
+            width: 100%;
+          }
+        }
+        .product--ratings__score {
+          margin-left: 2rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2.3rem;
+          color: #a2c3aa;
+        }
+      }
+      .green--line {
+        width: 40rem;
+        height: 0.1rem;
+        background: #a2c3aa;
+      }
+      .product--ratings__reviews {
+        margin-top: 2rem;
+        .product--ratings__review--user-name {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2.3rem;
+          color: #457e54;
+          margin-bottom: 1rem;
+        }
+        .product--ratings__review--user-stars {
+          width: 100%;
+          display: flex;
+          margin-bottom: 2rem;
+
+          .product--ratings__star {
+            height: 1.3rem;
+            margin-right: 0.5rem;
+            &:last-of-type {
+              margin-right: 0;
+            }
+            img {
+              height: 100%;
+            }
+          }
+          .product--ratings__review--date {
+            margin-left: 2rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+            color: #457e54;
+          }
+        }
+        .product--ratings__review--text {
+          max-width: 40rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2.3rem;
+          color: #457e54;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .product--ratings__see-more {
+      border: none;
+      background: transparent;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+      color: #beddc5;
+      cursor: pointer;
+      margin-top: 2rem;
+    }
+  }
+}

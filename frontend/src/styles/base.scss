@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+// .layout--container {
+//   max-width: 1366px;
+//   margin: 0 auto;
+// }
+
+.main-content {
+  min-height: calc(100vh - 18rem - 84rem);
+}
+
+@media (max-width: 620px) {
+  body {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  // .layout--container {
+  //   width: 100%;
+  //   padding: 0 4rem;
+  // }
+}

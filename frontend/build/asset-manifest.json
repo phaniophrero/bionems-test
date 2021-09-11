@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0bd10d4d.chunk.css",
+    "main.js": "/static/js/main.bb4964c1.chunk.js",
+    "main.js.map": "/static/js/main.bb4964c1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.37b24e34.js",
+    "runtime-main.js.map": "/static/js/runtime-main.37b24e34.js.map",
+    "static/js/2.659b0abc.chunk.js": "/static/js/2.659b0abc.chunk.js",
+    "static/js/2.659b0abc.chunk.js.map": "/static/js/2.659b0abc.chunk.js.map",
+    "static/js/3.5ac38f3e.chunk.js": "/static/js/3.5ac38f3e.chunk.js",
+    "static/js/3.5ac38f3e.chunk.js.map": "/static/js/3.5ac38f3e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0bd10d4d.chunk.css.map": "/static/css/main.0bd10d4d.chunk.css.map",
+    "static/js/2.659b0abc.chunk.js.LICENSE.txt": "/static/js/2.659b0abc.chunk.js.LICENSE.txt",
+    "static/media/Star-empty.2e7aba20.svg": "/static/media/Star-empty.2e7aba20.svg",
+    "static/media/Star.58dfc14f.svg": "/static/media/Star.58dfc14f.svg",
+    "static/media/arrow-down-sign-to-navigate.b527d9ca.svg": "/static/media/arrow-down-sign-to-navigate.b527d9ca.svg",
+    "static/media/arrowhead-thin-outline-to-the-left-1.74f18d9c.svg": "/static/media/arrowhead-thin-outline-to-the-left-1.74f18d9c.svg",
+    "static/media/arrowhead-thin-outline-to-the-left.a8a6642b.svg": "/static/media/arrowhead-thin-outline-to-the-left.a8a6642b.svg",
+    "static/media/bobun.3add8e05.png": "/static/media/bobun.3add8e05.png",
+    "static/media/check.521c5f1f.svg": "/static/media/check.521c5f1f.svg",
+    "static/media/logo.47b1bb97.png": "/static/media/logo.47b1bb97.png",
+    "static/media/logo2.791ec57b.png": "/static/media/logo2.791ec57b.png",
+    "static/media/slide-1.10482da5.png": "/static/media/slide-1.10482da5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37b24e34.js",
+    "static/js/2.659b0abc.chunk.js",
+    "static/css/main.0bd10d4d.chunk.css",
+    "static/js/main.bb4964c1.chunk.js"
+  ]
+}

@@ -1,0 +1,26 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// Variables
+@import "./styles/variables";
+// Base
+@import "./styles/base";
+
+@import "./styles/products/products";
+@import "./styles/products/productsResponsive";
+@import "./styles/products/productPage";
+
+@import "./styles/reviews/formReview";
+
+@import "./styles/navbar";
+
+@import "./styles/footer";
+
+@import "./styles/map";
+
+@import "./styles/slider/slider";
+@import "./styles/slider/slide";
+
+@import "./styles/reviews/reviews";
+
+@import "./styles/slider/productPageSlider";

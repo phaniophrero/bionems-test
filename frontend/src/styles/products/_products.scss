@@ -1,0 +1,51 @@
+.products--menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 13rem;
+  grid-row-gap: 10rem;
+  width: 89rem;
+  min-height: calc(100vh - 45rem - 1.2rem - 2.7rem);
+  margin: 14.2rem auto 0;
+
+  .products--menu__item {
+    max-height: 27.1rem;
+    max-width: 21rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+
+    .products--menu__image {
+      max-width: 21rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .drinks {
+      width: 5rem;
+    }
+    .drinks2 {
+      width: 10rem;
+    }
+
+    .products--menu__title {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3rem;
+      color: #a2c3aa;
+      margin-bottom: 2rem;
+    }
+    .products--menu__price {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 3rem;
+      color: #ffa5c1;
+    }
+  }
+}

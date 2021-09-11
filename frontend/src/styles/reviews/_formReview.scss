@@ -1,0 +1,130 @@
+.form--review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+
+  .form--review__title {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    line-height: 4.6rem;
+    color: #a2c3aa;
+    margin-bottom: 4rem;
+  }
+  .form--review__row--group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .form--review__row--inline {
+      width: 28rem;
+      margin-right: 4rem;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .form--review__row {
+    width: 60rem;
+    // align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .form--review__star--label {
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      line-height: 2.5rem;
+      color: #a2c3aa;
+    }
+    .form--review__label {
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      line-height: 2.5rem;
+      color: #a2c3aa;
+      margin-bottom: 1rem;
+    }
+    .form--review__input {
+      width: 100%;
+      //   height: 6.1rem;
+      padding: 1.2rem;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 0.1rem 0.6rem rgba(#168c34, 0.25);
+      &:focus {
+        outline-color: #a2c3aa;
+      }
+    }
+    .form--review__textarea {
+      width: 100%;
+      max-width: 60rem;
+      max-height: 15rem;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 0.1rem 0.6rem rgba(#168c34, 0.25);
+      &:focus {
+        outline-color: #a2c3aa;
+      }
+    }
+
+    .form--review__stars--wrapper {
+      margin-bottom: 10rem;
+      .form--review__star {
+        height: 2rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .form--review__row--button {
+    // margin-top: 3rem;
+    width: 60rem;
+    height: 6.1rem;
+    // width: 21rem;
+    // height: 6.1rem;
+    display: flex;
+
+    .form--review__button {
+      justify-self: flex-end;
+      align-self: flex-end;
+      width: 20.1rem;
+      //   height: 6.1rem;
+      padding: 1.2rem 6.7rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      letter-spacing: 0.2rem;
+      color: #a2c3aa;
+      border: none;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 0.1rem 0.6rem rgba(#168c34, 0.25);
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      &:hover {
+        // transform: scale(1.03);
+        background-color: #e8f6ec;
+        box-shadow: 0 0.1rem 0.6rem rgba(#168c34, 0.4);
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+}
