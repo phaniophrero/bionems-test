@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bionems-testing-328310",
+  "private_key_id": "5a35b0cd11f1f79a492e5d4dee3f66922049f312",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCq32mXJEaIG2Lj\nRuFBeQyKpdm8SkSu/drwcWEm/io8lbybC8UBn05j/AEyeNwEIucegWejLFHbNle+\njA4BtI9AnAAB36i6WzHzr2ycJTODzpHPBUnZPDz29LhjBic+bTQK2UAQnWXQq5a8\nb9qnol9VoiL9vYlfy36CW1WiAdBYGfebvs+Oqx0E96h2gERe6/hPBSU/WmsF/fap\nWCCC7UtqZF6koWm76tVskYD9f834VwVgwh9W6VRFw00mj/IIUjdPqTZKZ4CrPelt\nZe5mAVH+2BN57ncmQZI/S/DNN4q2/epQi5ATIP3IFzjuZaK8skflXfHp5yyMyE8R\n2D0YGn/5AgMBAAECggEACj10Tv36ChsWDIfJZQqTkVWKHGoY/qGw9rrctyEBN/tD\nP8lvR38cDArkqXkrukW7Mw1PQCyeRTRXAtDS4BBJi3Yt2+7i5jQj5LYtHJhwI2SE\nQXNQLygYgTY+PJT4UhnqRgIqADTmjqBR2r4bTPOCohei4DD1JBwGW1qM4bYZHcZr\nh2Bw4Vvc0OakOTnta04twBIyq+MOWKQ9DMwPIMSCkUj4o9sNyqSQmo9kaQndzOFw\nsAiDWlIIuKNWEPmv4Gsu8AKHBTMHU1cSIv08BCI4tyfuK/9K16hwT/X2zTHDevGW\nNErvXbCemJ/KROQVWErIbvJtSjLytdWPc1YxceeVgQKBgQDXp1oJwAg8/76wfj3r\nuYw6PbaR1HLUnfwhvDywocAp6vVsIdU59jGhrQIVusrB8dN9JYu9nWK1Brbh5SZ3\nJOCnYtmkbtfzfgIS0id9HfXemc4aMe3Cc7pq6MaI/77KhAas68db5ToEqkJawL5q\nESnwRyS4wHhplaOZXDoEJPeYGQKBgQDK10rH+KE78Q05Ske22b2qTSWX8TI0fayo\n5NJwUIedB6j2sZ4or/ZThB1zgrKD8XHMYVSZyqSzV/GuZ5eB/IB/hPJPOjvKrxT1\nh/VoCMVK9SVDbgnXeZLbDLe9s47NpUHMNsWYSjEhg1vl7FGGaDEdZWT6J+Ko+OK6\nR2MNTe6i4QKBgFBQ65+l/Wt6dDKXUchxGmC2i0BUt0+oZzbJPHEsTL1P3IehMiCc\nKG/mV1hwcQM6ZWG+kgTUkOaK0aHgDitheKnejuBGx/bPf0YzLrHSbrew4Kmw3rQF\nFfCrMQXk+dHCyhms1lrLTIhgQMY78q7eJZhvZqXISRBJwtxjFNhmTDBBAoGBAIM7\n0V0Zpi9i4LxdK5LIw2ZIbXcljObbHHdVPDWAVI0rJI0fE4WdetBD3M4cFCU7c/XY\nTuUFb5O85VeCHEr0M6rNN/w8X+zdY8ELSqIZcpPxkT9UFTf8px/j1Yj9f/na3nwi\nP6ss7SaSl0VlpMVB6ezr6e3TGllaVU5R22sDLc7hAoGBALiiZBd2JU2DmIZhGNRK\nU4t9rFqjgr2esqmwsPnM0VKWxughBULjhDWvAJT1eliALhbTs5OIR+VuMGjvosul\npAykONLzFpG1QSDkSyrvs9IE2h6DnbWbX0f6CBhbf3r8gYlYDrQouILBEJLq1gwX\nZxssw23M7p0UeDeLw2tgXRTy\n-----END PRIVATE KEY-----\n",
+  "client_email": "bionems-testing@bionems-testing-328310.iam.gserviceaccount.com",
+  "client_id": "105191626001260558760",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bionems-testing%40bionems-testing-328310.iam.gserviceaccount.com"
+}

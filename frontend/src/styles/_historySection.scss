@@ -1,0 +1,44 @@
+.history--section {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+
+  .history--section__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .history--section__title {
+      font-size: 5rem;
+      font-family: "LatoBold";
+      line-height: 7.5rem;
+      text-transform: uppercase;
+      color: $color-primary-green;
+    }
+  }
+
+  .history--section__bio {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .history--section__description {
+      width: 90%;
+      font-size: clamp(1.5rem, 2vw, 1.8rem);
+      font-family: "LatoRegular";
+      line-height: 2.7rem;
+      color: $color-shadow;
+      padding: 1rem 0;
+      text-align: center;
+
+      span {
+        font-family: "LatoBold";
+      }
+    }
+  }
+}

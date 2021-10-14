@@ -18,7 +18,7 @@
       font-size: 4rem;
       font-weight: 500;
       line-height: 6rem;
-      color: #457e54;
+      color: $green-color-dark3;
       margin-bottom: 1rem;
     }
 
@@ -40,9 +40,10 @@
     }
     .reviews--calculator__count-reviews {
       font-size: 1.5rem;
-      font-weight: 400;
+      // font-weight: 400;
+      font-family: "PoppinsRegular";
       line-height: 2.3rem;
-      color: #457e54;
+      color: $green-color-dark3;
     }
   }
 
@@ -83,7 +84,7 @@
   .green-line {
     width: 60rem;
     height: 0.1rem;
-    background-color: #a2c3aa;
+    background-color: $color-primary-green;
     margin: 2rem 0;
   }
 }

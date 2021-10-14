@@ -1,29 +1,67 @@
 .products--menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 13rem;
-  grid-row-gap: 10rem;
+  grid-column-gap: 6rem;
+  grid-row-gap: 6rem;
   width: 89rem;
   min-height: calc(100vh - 45rem - 1.2rem - 2.7rem);
   margin: 14.2rem auto 0;
 
   .products--menu__item {
-    max-height: 27.1rem;
-    max-width: 21rem;
+    // max-height: 32.6rem;
+    // max-width: 27rem;
+    width: 27rem;
+    // height: 46.6rem;
+    height: 59vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     text-decoration: none;
+    border-radius: 1.5rem;
+    padding: 2rem 2rem 0 2rem;
+    transition: 0.2s ease-out;
+    background-color: $color-white;
+    box-shadow: 0 2px 10px rgba($color-primary-green, 0.2);
+    transition: 0.2s ease-out;
+
+    // &:hover {
+    //   background-color: $color-white;
+    //   box-shadow: 0 2px 10px rgba($color-primary-green, 0.2);
+    //   transition: 0.2s ease-out;
+    // }
 
     .products--menu__image {
-      max-width: 21rem;
-      margin-bottom: 4rem;
+      // max-width: 23rem;
+      width: 28rem;
+      // width: 100%;
+      // height: 15rem;
+      margin-bottom: 3rem;
       display: flex;
       justify-content: center;
+      position: relative;
+      z-index: 100;
+
+      // &::before {
+      //   content: "";
+      //   width: 15.52rem;
+      //   height: 12.28rem;
+      //   background-color: #025d29;
+      //   border-radius: 0.5rem;
+      //   transform: rotate(170deg);
+      //   // background-image: url("../../images/bg-pattern.png");
+      //   background-size: cover;
+      //   background-repeat: no-repeat;
+      //   mix-blend-mode: color-dodge;
+      //   opacity: 0.7;
+      //   position: absolute;
+      //   bottom: 5%;
+      //   z-index: -1;
+      // }
 
       img {
         width: 100%;
+        object-fit: contain;
       }
     }
 
@@ -35,17 +73,34 @@
     }
 
     .products--menu__title {
-      font-size: 2rem;
-      font-weight: 500;
-      line-height: 3rem;
-      color: #a2c3aa;
+      font-size: 1.8rem;
+      font-family: "LatoBold";
+      line-height: 2.7rem;
+      text-transform: uppercase;
+      color: $color-primary-green;
       margin-bottom: 2rem;
+      text-shadow: 0 1px 1px rgba($color-shadow, 0.3);
     }
+
+    .products--menu__ingredients {
+      list-style: none;
+      padding-bottom: 2rem;
+
+      .products--menu__ingredient {
+        font-size: 1.5rem;
+        font-family: "PoppinsRegular";
+        line-height: 2.25rem;
+        color: $color-primary-green;
+      }
+    }
+
     .products--menu__price {
-      font-size: 2rem;
-      font-weight: 400;
-      line-height: 3rem;
-      color: #ffa5c1;
+      font-size: 1.8rem;
+      // font-weight: 400;
+      font-family: "PoppinsRegular";
+      line-height: 2.7rem;
+      color: $color-primary-red;
+      text-shadow: 0 1px 1px rgba($color-shadow, 0.3);
     }
   }
 }

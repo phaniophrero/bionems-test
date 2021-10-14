@@ -7,19 +7,25 @@ const Slide = (props) => {
   return (
     <div key={props.keyId} className="slide-content">
       <div className="slide--text">
-        <div className="logo--wrapper">
+        {/* <div className="logo--wrapper">
           <img src={logo} alt="Logo BioNems" />
-        </div>
+        </div> */}
         <div className="slide--content__left">
-          <h1 className="slide--title">
+          <h1
+            className={`slide--title ${
+              props.cNameTitle ? props.cNameTitle : ""
+            }`}
+          >
             {props.title}
-            <span className={`slide--subtitle ${props.cName}`}>
+            <span
+              className={`slide--subtitle ${props.cName ? props.cName : ""}`}
+            >
               {props.subtitle}
             </span>
           </h1>
           <div className="slide--menu">
-            <div className="slide--menu__list slide--menu__list-left">
-              <h2 className="slide--menu__title">{props.menuTitle}</h2>
+            <div className={props.cNameMenuList}>
+              {/* <h2 className="slide--menu__title">{props.menuTitle}</h2> */}
               <ul className="slide--menu__list-items">
                 <li>{props.menuTitleItem1}</li>
                 <li>{props.menuTitleItem2}</li>
@@ -29,18 +35,19 @@ const Slide = (props) => {
             </div>
             {props.keyId === "s1" && (
               <div className="slide--menu__list">
-                <h2 className="slide--menu__title">Roulleaux</h2>
+                {/* <h2 className="slide--menu__title">Roulleaux</h2> */}
                 <ul className="slide--menu__list-items">
                   <li>Roulleau de printemps au poulet</li>
-                  <li>Roulleau de printemps au vegetarie</li>
+                  <li>Roulleau de printemps au vegetarien</li>
                 </ul>
               </div>
             )}
           </div>
         </div>
       </div>
-      <div className="slide--image">
-        <h2 className="slide--image__title">Nouveau</h2>
+      <div className={`slide--image ${props.cNameImage}`}>
+        <h2 className="slide--image__title">{props.price}</h2>
+        <h3 className="slide--image__title2">Bon prix</h3>
         <img src={props.image} alt="BioNems Menu Images Nems et Rouleaux" />
       </div>
     </div>

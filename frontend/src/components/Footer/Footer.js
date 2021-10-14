@@ -1,6 +1,6 @@
 import React from "react";
 import Map from "../Map/Map";
-import logoFooter from "../../images/logo2.png";
+import logoFooter from "../../images/logo-footer.png";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";

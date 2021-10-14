@@ -6,11 +6,14 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Poppins", sans-serif;
+  font-family: "PoppinsRegular", "Lato-Regular", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   max-width: 1366px;
   margin: 0 auto;
+  // background-color: #fefedf;
+  background-color: #fbfbfd;
 }
 
 // .layout--container {
@@ -20,6 +23,20 @@ body {
 
 .main-content {
   min-height: calc(100vh - 18rem - 84rem);
+}
+
+.message--wrapper {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  &.success {
+    background-color: #c2ffc2;
+    color: #6db86d;
+  }
+  &.error {
+    background-color: #ffc2c2;
+    color: #c75d5d;
+  }
 }
 
 @media (max-width: 620px) {

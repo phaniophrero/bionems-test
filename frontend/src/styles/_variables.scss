@@ -1,19 +1,78 @@
+@font-face {
+  font-family: "PoppinsLight";
+  src: local("Poppins-Light"),
+    url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PoppinsRegular";
+  src: local("Poppins-Regular"),
+    url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PoppinsMedium";
+  src: local("Poppins-Medium"),
+    url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: local("Poppins-Bold"),
+    url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LatoLight";
+  src: local("Lato-Light"), url("../fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: local("Lato-Regular"),
+    url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LatoBold";
+  src: local("Lato-Bold"), url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+// $poppins: "Poppins", sans-serif;
+
 $default-font-size: 1.6rem;
 $nav-font-size: 1.8rem;
 
 // colors
-$primary-color-green: #a2c3aa;
+
+$color-white: #fff;
+$color-shadow: #4d4d4d;
+
+$color-primary-green: #19832b;
+$color-primary-red: #ad0002;
+$color-primary-red2: #b80103;
+
+$color-green: #a2c3aa;
 $primary-color-pink: #ffa5c1;
 
 $social-media-green: #a9c1af;
 
-$color-green: #6abe7f;
+// $color-green: #6abe7f;
 $color-green2: #b2d8bc;
 
 $green-color-dark: #73937b;
 $green-color-dark2: #539564;
 $green-color-dark3: #457e54;
 
+$color-yellow: #ffcb1d;
+
 $pink-color-dark: #c67e94;
 
 $color-green-shadow: #168c34;
+
+$dashboard-primary: #504799;
+$dashboard-secondary: #8f91b4;
+$dashboard-title: #313eb9;
+$dashboard-text: #1a173d;
+$dashboard-box: #f8faff;
+
+$dashboard-table: #3544cb;
+
+$dashboard-shadow-active: #5c69e3;
+$dashboard-shadow: #9194d1;
+$dashboard-shadow2: #80ceff;
+
+$dashboard-title-line: #8277ff;

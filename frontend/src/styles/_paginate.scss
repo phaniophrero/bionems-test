@@ -1,0 +1,30 @@
+.pagination {
+  padding-top: 3rem;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  .pagination--link {
+    text-decoration: none;
+    width: 4.2rem;
+    height: 4.2rem;
+    .pagination--link__button {
+      width: 100%;
+      height: 100%;
+      color: lighten($dashboard-primary, 15%);
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      border: none;
+      background: transparent;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.1rem 0.6rem $dashboard-shadow;
+      cursor: pointer;
+      &.active {
+        color: $dashboard-primary;
+
+        box-shadow: none;
+        transition: 0.2s ease-out;
+      }
+    }
+  }
+}

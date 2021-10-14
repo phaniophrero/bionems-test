@@ -7,23 +7,30 @@
 
   .navbar--top {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    display: grid;
+    // justify-content: center;
     align-items: center;
-    position: relative;
+    // grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(5, 20%);
+    // position: relative;
+    @media (max-width: 1360px) {
+      width: 90%;
+    }
   }
 
   .navbar--flag {
     width: 100%;
     display: flex;
     align-items: center;
-    position: absolute;
+    // position: absolute;
 
     .navbar--flag__text {
       font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 2.3rem;
-      color: #457e54;
+      // font-weight: 400;
+      font-family: "PoppinsMedium";
+      line-height: 2.25rem;
+      color: $color-primary-green;
       margin-right: 1rem;
     }
 
@@ -44,11 +51,93 @@
     margin-top: 4rem;
     margin-bottom: 5rem;
     text-decoration: none;
-    position: relative;
-    z-index: 100;
+    // position: relative;
+    // z-index: 100;
     img {
       height: 100%;
     }
+  }
+
+  .navbar--list__right {
+    justify-content: flex-end;
+  }
+
+  .navbar--list__left,
+  .navbar--list__right {
+    list-style: none;
+    display: flex;
+    // justify-content: space-between;
+
+    .navbar--item {
+      margin-right: 3rem;
+    }
+    .navbar--item2 {
+      margin-right: 0;
+    }
+
+    .navbar--link {
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: "PoppinsMedium";
+      line-height: 2.25rem;
+      color: $color-primary-red;
+      text-shadow: 0 1px 1px rgba($color-shadow, 0.3);
+      transition: 0.2s ease-out;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary-green;
+        transition: 0.2s ease-out;
+      }
+    }
+  }
+
+  .navbar--dropdown__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    justify-content: center;
+    // position: relative;
+
+    .navbar--dropdown {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      color: $color-primary-green;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      background: none;
+    }
+    .navbar--dropdown__list {
+      list-style: none;
+      position: absolute;
+      top: 100%;
+      left: 10%;
+      padding-top: 1rem;
+
+      .navbar--dropdown__item {
+        padding: 0.6rem 0.6rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $color-primary-green;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        &:hover {
+          color: darken($color-primary-green, 15%);
+        }
+      }
+    }
+  }
+
+  .dropdown--link__login {
+    color: $color-primary-green;
+    font-size: 1.5rem;
+    padding: 0 3rem;
+    text-decoration: none;
   }
 
   .navbar--contact__wrapper {
@@ -56,33 +145,35 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: absolute;
+    // position: absolute;
+    // z-index: 100;
 
     .navbar--top__facebook {
       font-size: 2.3rem;
-      color: #a9c1af;
+      color: $color-primary-green;
       margin-right: 2rem;
       &:hover {
-        color: #ffa5c1;
+        color: $color-primary-red;
       }
     }
 
     .navbar--top__phone-nr {
       display: flex;
       align-items: center;
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 2.3rem;
+      font-size: 1.5rem;
+      font-family: "PoppinsMedium";
+      line-height: 2.25rem;
       text-decoration: none;
-      color: #ffa5c1;
+      color: $color-primary-red;
+      text-shadow: 0 1px 1px rgba($color-shadow, 0.3);
 
       .navbar--phone-nr__icon-wrapper {
         font-size: 1.6rem;
         transform: rotate(45deg);
         margin-right: 1rem;
-        color: #a9c1af;
+        color: $color-primary-green;
         &:hover {
-          color: #ffa5c1;
+          color: $color-primary-red;
         }
       }
     }
@@ -110,24 +201,29 @@
         width: 0.6rem;
         height: 0.6rem;
         border-radius: 50%;
-        background: $primary-color-pink;
+        background: $color-primary-red;
+        box-shadow: 0 1px 1px rgba($color-shadow, 0.3);
       }
     }
 
     .navbar--list__link {
       text-decoration: none;
       font-size: $nav-font-size;
-      color: $primary-color-green;
+      color: $color-green;
       position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-shadow: 0 1px 2px rgba($color-shadow, 0.3);
 
       &:hover {
-        color: $primary-color-pink;
+        color: $color-primary-red;
       }
     }
 
     .navbar--list__item.active {
       .navbar--list__link {
-        color: #ffa5c1;
+        color: $color-primary-red;
       }
     }
     .dot {
@@ -141,11 +237,60 @@
       bottom: 0;
       left: 50%;
       border-radius: 50%;
-      background-color: $primary-color-pink;
+      background-color: $color-primary-red;
     }
   }
 }
 
 .navbar--categories {
   margin-top: 10rem;
+  // position: relative;
+  &::after {
+    content: "";
+    height: 0.1rem;
+    width: 100vw;
+    max-width: 89.8rem;
+    background-color: #a2c3aa;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    border-radius: 1rem;
+  }
+}
+
+// navbar2
+.navbar2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .navbar2--list2 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .navbar2--item {
+      margin-right: 3rem;
+      position: relative;
+    }
+
+    .navbar2--link {
+      font-size: 1.5rem;
+      font-family: "PoppinsMedium";
+      line-height: 2.25rem;
+      color: $color-green;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+
+      &:hover {
+        color: $color-shadow;
+      }
+    }
+
+    .navbar2--item2 {
+      margin-right: 3rem;
+    }
+  }
 }

@@ -1,11 +1,29 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import ProductPageSlide from "./ProductPageSlide";
+import Loader from "../UI/Loader";
+import Message from "../UI/Message";
 import Button from "../UI/Button";
+import { listTopProducts } from "../../actions/productActions";
 import arrowLeft from "../../images/arrowhead-thin-outline-to-the-left.svg";
 import arrowRight from "../../images/arrowhead-thin-outline-to-the-left-1.svg";
 
 const ProductPageSlider = ({ slides }) => {
   const [index, setIndex] = useState(0);
+
+  const dispatch = useDispatch();
+
+  const productTopRated = useSelector((state) => state.productTopRated);
+
+  const { error, loading, products } = productTopRated;
+
+  console.log(products);
+
+  useEffect(() => {
+    dispatch(listTopProducts());
+  }, [dispatch]);
+
   //   console.log(slides);
 
   const prevClickHandler = () => {
@@ -20,7 +38,11 @@ const ProductPageSlider = ({ slides }) => {
     // setIndex(index - 100);
   };
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : error ? (
+    <Message type="error">{error}</Message>
+  ) : (
     <div className="product--page__slider--container">
       <Button
         className="product--page__slider--btn product--page__slider--btn-left"
@@ -36,8 +58,10 @@ const ProductPageSlider = ({ slides }) => {
         //   transition: "0.4s ease all",
         // }}
       >
-        {slides.map((item) => (
-          <ProductPageSlide item={item} />
+        {products.map((product) => (
+          <Link key={product._id} to={`/product/${product}`}>
+            <ProductPageSlide product={product} />
+          </Link>
         ))}
       </div>
       <Button

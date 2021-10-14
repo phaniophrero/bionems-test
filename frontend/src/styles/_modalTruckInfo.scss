@@ -1,0 +1,63 @@
+.modalTruck--exit-background {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(#000, 0.7);
+  left: 0;
+  top: 0;
+  transition: 1s ease-out;
+
+  &.remove--bg {
+    display: none;
+    transition: 1s ease-out;
+  }
+}
+
+.modalTruck--background {
+  height: 100vh;
+  //   width: 100vh;
+  position: fixed;
+  //   background-color: rgba(#000, 0.3);
+  right: 5%;
+  top: 20%;
+}
+
+.modalTruck--container {
+  position: relative;
+  width: 40rem;
+  height: 67rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  background: $color-white;
+  border: 1.5rem;
+
+  .modalTruck--button__wrapper {
+    position: absolute;
+    right: 3%;
+    top: 6%;
+
+    .modalTruck--button {
+      border: none;
+      background: transparent;
+    }
+  }
+
+  .modalTruck--header {
+    .modalTruck--title {
+    }
+  }
+
+  .modalTruck--info {
+    .modalTruck--subheader {
+      .modalTruck--subtitle {
+      }
+    }
+
+    .modalTruck--info__list {
+    }
+  }
+}

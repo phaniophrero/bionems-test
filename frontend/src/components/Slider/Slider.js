@@ -54,10 +54,11 @@ const Slider = () => {
           ref={sliderWidthRef}
         >
           {slides.map((item) => (
-            <div className="slide">
+            <div key={item.id} className="slide">
               <Slide
                 keyId={item.id}
                 title={item.title}
+                price={item.price}
                 image={item.image}
                 subtitle={item.subtitle}
                 menuTitle={item.menuTitle}
@@ -66,6 +67,9 @@ const Slider = () => {
                 menuTitleItem3={item.menuTitleItem3}
                 menuTitleItem4={item.menuTitleItem4}
                 cName={item.cName}
+                cNameTitle={item.cNameTitle}
+                cNameImage={item.cNameImage}
+                cNameMenuList={item.cNameMenuList}
               />
             </div>
           ))}

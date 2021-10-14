@@ -1,10 +1,32 @@
+.goback--wrapper {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  padding: 3rem 0;
+  .goback--link {
+    font-size: 1.5rem;
+    font-family: "PoppinsMedium";
+    line-height: 2.25rem;
+    color: $color-shadow;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      color: lighten($color-shadow, 10%);
+      transition: 0.2 ease-out;
+    }
+  }
+}
+
 .product--container {
   width: 100%;
   display: flex;
   flex-direction: column;
 
   .product--wrapper {
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
 
     .product--image__wrapper {
       width: 40rem;
@@ -17,24 +39,29 @@
     .product--details {
       .product--title {
         font-size: 4rem;
-        font-weight: 500;
-        line-height: 6rem;
-        color: #168c34;
+        // font-weight: 500;
+        font-family: "PoppinsMedium";
+        line-height: 6.6rem;
+        color: $color-primary-green;
+        text-transform: uppercase;
       }
       .product--title2 {
         font-size: 2rem;
-        font-weight: 400;
-        line-height: 3rem;
-        color: #ffa5c1;
+        // font-weight: 400;
+        font-family: "PoppinsLight";
+        line-height: 3.2rem;
+        color: $color-primary-red;
+        margin-bottom: 2rem;
       }
 
       .product--ingredient__list {
         list-style: none;
         .product--ingredient__item {
           font-size: 1.8rem;
-          font-weight: 400;
-          line-height: 2.7rem;
-          color: #539564;
+          // font-weight: 400;
+          font-family: "PoppinsRegular";
+          line-height: 2.9rem;
+          color: $color-shadow;
         }
       }
     }
@@ -42,14 +69,52 @@
 
   .product--info {
     width: 100%;
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin-top: 5rem;
 
+    .product--reviews__title {
+      font-size: 1.5rem;
+      font-family: "PoppinsRegular";
+      line-height: 2.25rem;
+      color: $color-primary-green;
+    }
+
+    .product--reviews__wrapper {
+      width: 26vw;
+      padding: 2rem 0;
+      border-bottom: 1px solid $color-green;
+    }
+    .product--review__name {
+      font-size: 1.5rem;
+      font-family: "PoppinsRegular";
+      line-height: 2.25rem;
+      color: $color-primary-green;
+    }
+
+    .product--review__stars-date {
+      display: flex;
+    }
+    .product--review__date {
+      font-size: 1.2rem;
+      font-family: "PoppinsRegular";
+      line-height: 1.9rem;
+      color: $color-shadow;
+    }
+    .product--review__comment {
+      font-size: 1.5rem;
+      font-family: "PoppinsRegular";
+      line-height: 2.25rem;
+      color: $color-shadow;
+    }
+
     .product--ratings {
-      width: 41rem;
+      // width: 41rem;
+      width: 8vw;
       display: flex;
       flex-direction: column;
-      margin-right: 20rem;
+      margin-right: 2rem;
     }
 
     .description {
@@ -59,16 +124,17 @@
 
       .description--title {
         font-size: 2.5rem;
-        font-weight: 400;
-        line-height: 3.8rem;
-        color: #a2c3aa;
+        // font-weight: 400;
+        font-family: "PoppinsRegular";
+        line-height: 4.1rem;
+        color: $color-primary-green;
         position: relative;
         padding-bottom: 1.4rem;
         &::after {
           content: "";
           width: 5rem;
           height: 0.2rem;
-          background-color: #457e54;
+          background-color: $color-primary-red;
           position: absolute;
           left: 0;
           bottom: 0;
@@ -80,9 +146,10 @@
         justify-self: flex-end;
         justify-content: flex-end;
         font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 2.7rem;
-        color: #ffa5c1;
+        // font-weight: 400;
+        font-family: "PoppinsRegular";
+        line-height: 2.9rem;
+        color: $color-shadow;
         margin-top: 2rem;
       }
     }
@@ -104,7 +171,8 @@
           }
         }
         svg {
-          color: #ffcb1d;
+          color: $color-yellow;
+          font-size: 1.5rem;
         }
         .product--ratings__icon {
           width: 1.2rem;
@@ -118,23 +186,25 @@
         .product--ratings__score {
           margin-left: 2rem;
           font-size: 1.5rem;
-          font-weight: 400;
+          // font-weight: 400;
+          font-family: "LatoRegular";
           line-height: 2.3rem;
-          color: #a2c3aa;
+          color: $color-primary-green;
         }
       }
       .green--line {
         width: 40rem;
         height: 0.1rem;
-        background: #a2c3aa;
+        background: $color-primary-green;
       }
       .product--ratings__reviews {
         margin-top: 2rem;
         .product--ratings__review--user-name {
           font-size: 1.5rem;
-          font-weight: 400;
+          // font-weight: 400;
+          font-family: "LatoRegular";
           line-height: 2.3rem;
-          color: #457e54;
+          color: $green-color-dark3;
           margin-bottom: 1rem;
         }
         .product--ratings__review--user-stars {
@@ -155,17 +225,19 @@
           .product--ratings__review--date {
             margin-left: 2rem;
             font-size: 1.2rem;
-            font-weight: 400;
+            // font-weight: 400;
+            font-family: "LatoRegular";
             line-height: 1.8rem;
-            color: #457e54;
+            color: $green-color-dark3;
           }
         }
         .product--ratings__review--text {
           max-width: 40rem;
           font-size: 1.5rem;
-          font-weight: 400;
+          // font-weight: 400;
+          font-family: "LatoRegular";
           line-height: 2.3rem;
-          color: #457e54;
+          color: $green-color-dark3;
           margin-bottom: 2rem;
         }
       }
@@ -174,11 +246,70 @@
       border: none;
       background: transparent;
       font-size: 1.8rem;
-      font-weight: 400;
+      // font-weight: 400;
+      font-family: "LatoRegular";
       line-height: 2.7rem;
       color: #beddc5;
       cursor: pointer;
       margin-top: 2rem;
+    }
+  }
+
+  .create--review {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .product--create-review__heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .product--create-review__title {
+        font-size: 3rem;
+        font-family: "PoppinsBold";
+        line-height: 4.5rem;
+        color: $color-primary-green;
+      }
+    }
+
+    .product--create-review__form {
+      width: 47vw;
+      display: flex;
+      flex-direction: column;
+
+      .product--create-review__select-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .product--create-review__label {
+        }
+        .product--create-review__select {
+          width: 20vw;
+        }
+        .product--create-review__option {
+        }
+      }
+      .product--create-review__comment {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product--create-review__button-wrapper {
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

@@ -14,6 +14,10 @@
 
 @import "./styles/navbar";
 
+@import "./styles/modalTruckInfo";
+
+@import "./styles/historySection";
+
 @import "./styles/footer";
 
 @import "./styles/map";
@@ -24,3 +28,14 @@
 @import "./styles/reviews/reviews";
 
 @import "./styles/slider/productPageSlider";
+
+@import "./styles/loading";
+
+@import "./styles/login";
+
+@import "./styles/paginate";
+
+// Dashboard
+
+@import "./styles/dashboard/dashboard";
+@import "./styles/dashboard/navbarDashboard";

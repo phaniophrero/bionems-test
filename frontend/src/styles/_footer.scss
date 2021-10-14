@@ -1,17 +1,27 @@
 .footer--main {
-  min-width: 1366px;
-  display: flex;
+  // min-width: 1366px;
+  max-width: 1366px;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 30% 70%;
   margin-top: 20rem;
   padding-bottom: 12rem;
 
+  @media (max-width: 1360px) {
+    width: 90%;
+    margin: 20rem auto 0 auto;
+    grid-template-columns: 100%;
+  }
+
   .footer--left-side {
-    width: 50.9rem;
+    // width: 50.9rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .footer--logo__wrapper {
-    height: 5rem;
+    height: 7rem;
     margin-bottom: 10rem;
 
     img {
@@ -21,10 +31,13 @@
 
   .footer--social-media__title {
     font-size: 1.8rem;
-    font-weight: 400;
+    // font-weight: 400;
+    font-family: "LatoBold";
     line-height: 2.7rem;
-    color: #457e54;
+    color: $color-primary-green;
     text-transform: uppercase;
+    text-shadow: 0 1px 2px;
+    text-shadow: 0 1px 2px rgba($color-shadow, 0.3);
   }
 
   .footer--social-media__icons {
@@ -33,11 +46,11 @@
     margin-top: 1.3rem;
     .footer--social-media__links {
       font-size: 2rem;
-      color: #a9c1af;
+      color: $color-green;
       transition: color 0.3s ease-out;
       margin-right: 2rem;
       &:hover {
-        color: #ffa5c1;
+        color: $color-primary-red;
         transition: color 0.3s ease-out;
       }
     }
@@ -54,26 +67,36 @@
   }
 
   .footer--right-side {
-    min-width: 85.7rem;
+    // min-width: 85.7rem;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: 1360px) {
+      justify-content: space-between;
+    }
 
     .footer--program {
       display: flex;
       flex-direction: column;
       text-align: right;
       list-style: none;
+      width: 29vw;
+      @media (max-width: 1360px) {
+        width: 32vw;
+      }
 
       li {
         font-size: 1.5rem;
-        font-weight: 400;
+        // font-weight: 400;
+        font-family: "PoppinsMedium";
         line-height: 2.3rem;
-        color: #539564;
+        color: $color-primary-green;
+        text-shadow: 0 1px 2px rgba($color-shadow, 0.3);
 
         .footer--program__hours {
-          color: #ffa5c1;
+          color: #4d4d4d;
         }
         .left {
           margin-left: 3rem;

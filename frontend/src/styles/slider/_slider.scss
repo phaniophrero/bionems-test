@@ -7,7 +7,12 @@
   //   background: #a57294;
   overflow: hidden;
   border-radius: 1.5rem;
-  box-shadow: 0 1px 8px rgba(#168c34, 0.25);
+  box-shadow: 0 1px 10px rgba(#186425, 0.3);
+  // when device's width is less than or equal to 1366px
+  @media (max-width: 1360px) {
+    width: 90%;
+    margin: 3rem auto 0 auto;
+  }
 }
 .slider {
   //   border: 3px solid #b40000;
@@ -32,17 +37,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #b2d8bc;
+  background-color: $color-green2;
   margin-right: 2rem;
   cursor: pointer;
   transition: all 0.3s ease-out;
+  box-shadow: 0 1px 2px rgba($color-shadow, 0.5);
   &:hover {
-    background-color: #6abe7f;
+    background-color: $color-primary-green;
   }
 }
 .dot.active {
   width: 4rem;
   border-radius: 2rem;
-  background-color: #6abe7f;
+  background-color: $color-primary-green;
   transition: all 0.3s ease-out;
+  box-shadow: 0 2px 4px rgba($color-shadow, 0.5);
 }

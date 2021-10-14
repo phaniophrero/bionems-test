@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { BiMap } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 
+const containerStyleResp = {
+  width: "42vw",
+  height: "30rem",
+  borderRadius: "15px",
+};
+
 const containerStyle = {
-  width: "50rem",
+  width: "35vw",
   height: "30rem",
   borderRadius: "15px",
 };
@@ -15,6 +21,15 @@ const position = {
 };
 
 const Map = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpointFirst = 1360;
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <div className="map--wrapper">
       <div className="map--address">
@@ -28,7 +43,9 @@ const Map = () => {
       </div>
       <LoadScript googleMapsApiKey={process.env.MAP_API_KEY}>
         <GoogleMap
-          mapContainerStyle={containerStyle}
+          mapContainerStyle={
+            width < breakpointFirst ? containerStyleResp : containerStyle
+          }
           center={position}
           zoom={18}
         >
