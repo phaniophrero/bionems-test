@@ -35,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1',
-                 'localhost', '217.69.10.18', 'bionems-dj-react.herokuapp.com']
+                 'localhost', '217.69.9.220', 'bionems-dj-react.herokuapp.com']
 
 
 # Application definition
@@ -210,7 +210,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # if os.getcwd() == '/app':
 #     DEBUG = False
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+# try:
+#     from .local_settings import *
+# except ImportError:
+#     pass
