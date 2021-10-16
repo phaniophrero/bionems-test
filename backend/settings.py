@@ -35,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1',
-                 'localhost', 'bionems-dj-react.herokuapp.com']
+                 'localhost', '217.69.10.18', 'bionems-dj-react.herokuapp.com']
 
 
 # Application definition
@@ -131,9 +131,15 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / env('DB_NAME'),
+        'USER': BASE_DIR / env('DB_USER'),
+        'PASSWORD': BASE_DIR / env('DB_PASSWORD'),
+        'HOST': BASE_DIR / env('DB_HOST'),
+        'PORT': BASE_DIR / env('DB_PORT'),
     }
 }
 
@@ -207,3 +213,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # if os.getcwd() == '/app':
 #     DEBUG = False
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
