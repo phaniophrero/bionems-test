@@ -35,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1',
-                 'localhost', '217.69.9.220', 'bionems-dj-react.herokuapp.com']
+                 'localhost', '217.69.2.90', 'bionems-dj-react.herokuapp.com']
 
 
 # Application definition
