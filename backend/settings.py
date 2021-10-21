@@ -13,8 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from datetime import timedelta
 import os
 from pathlib import Path
-import django_heroku
-import dj_database_url
+# import django_heroku
+# import dj_database_url
 import environ
 
 
@@ -139,11 +139,12 @@ DATABASES = {
         'USER': env('DB_USER'),
         'PASSWORD':  env('DB_PASSWORD'),
         'HOST': env('DB_HOST'),
+        'PORT': '5432'
     }
 }
 
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+# db_from_env = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -199,7 +200,7 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -212,8 +213,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # if os.getcwd() == '/app':
 #     DEBUG = False
-
-# try:
-#     from .local_settings import *
-# except ImportError:
-#     pass
