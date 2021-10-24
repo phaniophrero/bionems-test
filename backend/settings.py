@@ -35,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1',
-                 'localhost', '217.69.2.90', 'bionems-dj-react.herokuapp.com']
+                 'localhost', '217.69.3.26', 'bionems-dj-react.herokuapp.com']
 
 
 # Application definition
@@ -135,7 +135,7 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME':  'bionems_test_db',
+        'NAME':  'db_bionems',
         'USER': env('DB_USER'),
         'PASSWORD':  env('DB_PASSWORD'),
         'HOST': env('DB_HOST'),
