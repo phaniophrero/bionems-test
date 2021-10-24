@@ -33,9 +33,10 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+PRODUCTION = False
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1',
-                 'localhost', '217.69.3.26', 'bionems-dj-react.herokuapp.com']
+                 'localhost', '217.69.3.26', 'vercel.app', 'bionems-dj-react.herokuapp.com']
 
 
 # Application definition
@@ -211,5 +212,32 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# if os.getcwd() == '/app':
-#     DEBUG = False
+if PRODUCTION:
+    DEBUG = False
+    ALLOWED_HOSTS = ['$HOST']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'db_bionems',
+            'USER': 'dbuser',
+            'PASSWORD': env('DB_PASSWORD'),
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
+        }
+    }
+    STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = '/var/www/mysite/myenv/mysite/media/'
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = []
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static'),
+        os.path.join(BASE_DIR, 'frontend/build/static'),
+    ]
