@@ -137,10 +137,9 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'NAME':  'db_bionems',
-        'USER': '',
-        'PASSWORD':  '',
-        'HOST': '',
-        'PORT': ''
+        'USER': 'dbadmin',
+        'PASSWORD':  'abc123!',
+        'HOST': 'localhost'
     }
 }
 
