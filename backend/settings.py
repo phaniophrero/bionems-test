@@ -190,6 +190,7 @@ MEDIA_URL = '/images/'
 #     BASE_DIR / 'frontend/build/static',
 # ]
 
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'frontend/build/static'),
