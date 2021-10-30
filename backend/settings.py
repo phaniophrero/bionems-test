@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-(%yp8a*0&8ya7h_u1=z_494ua6bltzuzg(#_bafg_7&7iif3ek
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1',
-                 'localhost', '217.69.3.26', 'bionems-dj-react.herokuapp.com']
+                 'localhost', '217.69.3.26', 'bionems.fr', 'www.bionems.fr', 'bionems-dj-react.herokuapp.com']
 
 
 # Application definition
